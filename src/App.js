@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import CoctailContainer from './components/CoctailContainer';
+import { Route , Routes,Link } from 'react-router-dom';
+import About from './components/About';
+import ItemDetails from './components/ItemDtails';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="">
+                <button><Link to={'/'}>Home</Link></button>
+                <button><Link to={'/about'}>About</Link></button>
+
+            </div>
+     
+
+      <Routes>
+        <Route path='/' Component={CoctailContainer} exact={true}/>
+        <Route path="/:id" Component={ItemDetails} />
+
+      <Route path='/About' Component={About} exact={true}/>
+      </Routes>
+
+
+      
+     
     </div>
   );
 }
