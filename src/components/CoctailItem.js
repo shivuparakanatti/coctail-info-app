@@ -7,7 +7,6 @@ const CoctailItem =()=>{
     const [allCoctails,setAllCoctails] = useState([])
    //const allCoctails = []
 
-
    useEffect(()=>{
     axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
     .then(res=>{
