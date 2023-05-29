@@ -14,6 +14,7 @@ const CoctailItem =()=>{
        // console.log(res.data)
       // allCoctails.push(res.data.drinks)
        setAllCoctails(res.data.drinks)
+      
     })
     .catch(err=>{
         alert(err)
