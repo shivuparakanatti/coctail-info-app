@@ -10,7 +10,6 @@ function App() {
       <div className="">
                 <button><Link to={'/'}>Home</Link></button>
                 <button><Link to={'/about'}>About</Link></button>
-
             </div>
      
       <Routes>
