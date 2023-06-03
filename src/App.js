@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path='/' Component={CoctailContainer} exact={true}/>
         <Route path="/:id" Component={ItemDetails} />
-      <Route path='/About' Component={About} exact={true}/>
+        <Route path='/About' Component={About} exact={true}/>
       </Routes>
 
 
