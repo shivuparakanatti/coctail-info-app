@@ -13,7 +13,6 @@ function App() {
 
             </div>
      
-
       <Routes>
         <Route path='/' Component={CoctailContainer} exact={true}/>
         <Route path="/:id" Component={ItemDetails} />
