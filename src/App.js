@@ -11,7 +11,6 @@ function App() {
                 <button><Link to={'/'}>Home</Link></button>
                 <button><Link to={'/about'}>About</Link></button>
        </div>
-
       <Routes>
         <Route path='/' Component={CoctailContainer} exact={true}/>
         <Route path="/:id" Component={ItemDetails} />
