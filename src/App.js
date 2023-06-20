@@ -17,7 +17,6 @@ function App() {
         <Route path='/About' Component={About} exact={true}/>
       </Routes>
 
-
       
      
     </div>
