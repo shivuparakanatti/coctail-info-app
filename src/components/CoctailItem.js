@@ -14,7 +14,7 @@ const CoctailItem =()=>{
       // allCoctails.push(res.data.drinks)
        setAllCoctails(res.data.drinks)
       
-    })
+   })
     .catch(err=>{
         alert(err)
     })
