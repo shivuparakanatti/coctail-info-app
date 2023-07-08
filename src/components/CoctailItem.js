@@ -10,7 +10,7 @@ const CoctailItem =()=>{
    useEffect(()=>{
     axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
     .then(res=>{
-       // console
+       //
       // allCoctails.push(res.data.drinks)
        
    setAllCoctails(res.data.drinks)
