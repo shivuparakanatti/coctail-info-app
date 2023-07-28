@@ -12,7 +12,7 @@ const CoctailItem =()=>{
     .then(res=>{
        //
       // allCoctails.push(res.data.drinks)
-      
+   
    setAllCoctails(res.data.drinks)
       
    })
